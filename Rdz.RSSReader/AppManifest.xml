@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<App xmlns="http://schemas.microsoft.com/sharepoint/2012/app/manifest"
+     Name="RdzRSSReader"
+     ProductID="{6c862809-fd30-48c8-82c5-dca7286ead2a}"
+     Version="1.2.0.0"
+     SharePointMinVersion="15.0.0.0"
+>
+	<Properties>
+		<Title>Rdz RSSReader</Title>
+		<StartPage>~appWebUrl/Pages/Default.aspx?{StandardTokens}</StartPage>
+		<SupportedLocales>
+			<SupportedLocale CultureName="en-us" />
+		</SupportedLocales>
+	</Properties>
+
+	<AppPrincipal>
+		<Internal />
+	</AppPrincipal>
+
+	<AppPermissionRequests></AppPermissionRequests>
+</App>

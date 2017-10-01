@@ -1,0 +1,129 @@
+/* Client Web Part styles */
+BODY.clientwebpart-body
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	overflow:auto;
+	background-color:transparent;
+}
+
+.clientwebpart-body .clientwebpart-div
+{
+	margin: 0;
+	padding: 5px;
+	border: 0;
+	position: relative;
+	/*width: 300px;
+	height: 200px;
+	background-color: #0072C6;
+	color: #FFFFFF;
+	font-size: 14pt;*/
+}
+
+/* Place custom styles below */
+.RSSImage {
+	position:relative;
+	left:300px;
+}
+.RSSBlock {
+/*
+	margin: 5px 0 5px 0;
+	padding: 10px;
+*/
+	border-top:solid #CFCFCF 1px;
+}
+.RSSBlock:first-child {
+	border-top:none;
+}
+.RSSBlock:hover {
+}
+.RSSBlock > TABLE {
+	min-height:55px;
+	height:55px;
+}
+.RSSRow {
+	vertical-align:top;
+}
+TD.RSSLeft, .RSSLeft {
+	width:100px;
+	text-align:center;
+	padding:10px;
+}
+TD.RSSRight, .RSSRight {
+	padding:10px;
+	width:auto;
+}
+.RSSLeft, .RSSRight{
+	vertical-align:middle;
+}
+.RSSTitle {
+}
+
+.RSSContent,.RSSContent:hover {
+	font-size:8pt;
+	background:none !important;
+}
+.RSSDate,
+.RSSDate:active,.RSSDate:hover,.RSSDate:link,.RSSDate:visited
+{
+	padding:0;
+	background:none !important;
+	font-size:12px;
+}
+.RSSBlockError {
+	border: solid 1px #AA0000;
+	margin: 5px 0 5px 0;
+	padding: 10px;
+}
+.RSSError {
+	font-size:10pt;
+}
+.RSSLinkTitle,
+.RSSLinkTitle:active,.RSSLinkTitle:hover,.RSSLinkTitle:link,.RSSLinkTitle:visited
+{
+	font-size:13pt;
+	text-decoration:none;
+	background:none;
+	padding:0;
+}
+.HelpHead {
+	margin: 5px 0 5px 0;
+	padding: 10px;
+	cursor:pointer;
+	font-size: 14pt;
+}
+.HelpDesc {
+	padding: 0 10px 15px 10px;
+	font-size: 10pt;
+}
+
+
+
+
+.HelpHead-Old {
+	/* [ReplaceColor(themeColor:"SuiteBarBackground")] */ background-color:#0072c6;
+	/* [ReplaceColor(themeColor:"SuiteBarText")] */ color:#fff;
+}
+.RSSLinkTitle-Old {
+	/* [ReplaceColor(themeColor:"SuiteBarText")] */ color:#fff;
+}
+.RSSError-Old {
+	/* [ReplaceColor(themeColor:"ErrorText")] */ color:#bf0000;
+}
+.RSSBlockError-Old {
+	/* [ReplaceColor(themeColor:"ErrorText")] */ border-color:#bf0000;
+}
+.RSSContent-Old {
+	/* [ReplaceColor(themeColor:"SuiteBarText")] */ color:#fff;
+}
+.RSSDate-Old {
+	/* [ReplaceColor(themeColor:"SuiteBarText")] */ color:#fff;
+}
+.RSSBlock-Old{
+	/* [ReplaceColor(themeColor:"SuiteBarBackground")] */ background-color:#0072c6;
+	/* [ReplaceColor(themeColor:"SuiteBarText")] */ color:#fff;
+}
+.RSSBlock-Old:hover {
+	/* [ReplaceColor(themeColor:"SuiteBarHoverBackground")] */ background-color:#4c9cd7;
+}

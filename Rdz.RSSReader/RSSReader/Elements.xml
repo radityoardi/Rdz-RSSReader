@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ClientWebPart
+		Name="RSSReader" Title="Rdz RSSReader"
+		Description="Simple RSSReader, powered Google Feed API."
+		DefaultWidth="800" DefaultHeight="760">
+
+    <!-- Content element identifies the location of the page that will render inside the client web part
+         Properties are referenced on the query string using the pattern _propertyName_
+         Example: Src="~appWebUrl/Pages/ClientWebPart1.aspx?Property1=_property1_" -->
+    <Content Type="html" Src="~appWebUrl/Pages/ClientWebPart.aspx?{StandardTokens}&amp;RssUrl=_RssUrl_&amp;LinkBehavior=_LinkBehavior_&amp;MaxRSS=_MaxRSS_" />
+
+    <!-- Define properties in the Properties element
+           Remember to put Property Name on the Src attribute of the Content element above
+    <Properties>
+      <Property Name="property1" Type="string" WebBrowsable="true" WebDisplayName="First Property" WebDescription="Description 1" WebCategory="Custom Properties" DefaultValue="String Property" RequiresDesignerPermission="true" />
+    </Properties>   -->
+		<!-- Debug version, error on https://news.google.com/news/section?pz=1&cf=all&q=Ainsworth+Pet+Nutrition&ned=us&output=rss -->
+		<!-- Debug version, old default value http://rss.cnn.com/rss/edition.rss -->
+		<Properties>
+			<Property
+				Name="RssUrl"
+				Type="string"
+				WebBrowsable="true"
+				WebDisplayName="RSS URL"
+				WebDescription="URL to fetch RSS"
+				WebCategory="Sources"
+				DefaultValue="http://rss.cnn.com/rss/edition.rss"
+				PersonalizationScope="shared"
+				RequiresDesignerPermission="true">
+			</Property>
+			<Property
+				Name="MaxRSS"
+				Type="int"
+				WebBrowsable="true"
+				WebDisplayName="Displayed Items"
+				WebDescription="Count of displayed items (min:1, max: 100)"
+				WebCategory="Display"
+				DefaultValue="10"
+				PersonalizationScope="shared"
+				RequiresDesignerPermission="true">
+			</Property>
+			<Property
+				Name="LinkBehavior"
+				Type="enum"
+				WebBrowsable="true"
+				WebDisplayName="Link Behavior"
+				WebDescription=""
+				WebCategory="Display"
+				DefaultValue="CurrentWindow"
+				PersonalizationScope="shared"
+				RequiresDesignerPermission="true">
+				<EnumItems>
+					<EnumItem WebDisplayName="Open in new window" Value="NewWindow"/>
+					<EnumItem WebDisplayName="Open in the current window" Value="CurrentWindow"/>
+				</EnumItems>
+			</Property>
+		</Properties>
+
+	</ClientWebPart>
+</Elements>

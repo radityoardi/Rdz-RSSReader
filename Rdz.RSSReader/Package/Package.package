@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package dslVersion="1.0.0.0" 
+        Id="75f2fd79-a1c4-431b-b722-af3951ef245c" 
+        solutionId="75f2fd79-a1c4-431b-b722-af3951ef245c" 
+        xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel" 
+        name="Rdz.RSSReader"
+        sharePointProductVersion="15.0">
+  <features>
+        <featureReference itemId="24d29997-caae-420e-9156-d93d041d0472" />
+  </features>
+</package>
